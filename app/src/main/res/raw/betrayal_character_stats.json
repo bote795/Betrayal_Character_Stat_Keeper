@@ -1,0 +1,57 @@
+{
+	"characters":[{
+	"name": "Darrin \"Flash\" Williams"
+	"Age": "20"
+	"Height": "5'11"
+	"Weight": "188 lbs"
+	"Hobbies": "Track, Music, Shakesparean "Literature""
+	"Birthday": "June 6th"
+	"stats": [
+		"SPEED":{
+			"values": "[4,4,4,5,6,7,7,8]"
+			"default_index": "4"
+		},
+		"MIGHT":{
+			"values": "[2,3,3,4,5,6,6,7]"
+			"default_index": "2"
+		},
+		"SANITY":{
+			"values": "[1,2,3,4,5,5,5,7]"
+			"default_index": "2"
+		},
+		"KNOWLEDGE":{
+			"values": "[2,3,3,4,5,5,5,7]"
+			"default_index": "2"
+		}
+	]
+	},
+	{
+	"name": "Professor Longfellow"
+	"Age": "57"
+	"Height": "5'11"
+	"Weight": "153 lbs"
+	"Hobbies": "Gaelic Music, Drama, Fine "Wines""
+	"Birthday": "July 27th"
+	"stats": [
+		"SPEED":{
+			values: "[2,2,4,4,5,5,6,6]"
+			default_index: "3"
+		},
+		"MIGHT":{
+			values: "[1,2,3,4,5,5,6,6]"
+			default_index: "2"
+		},
+		"SANITY":{
+			values: "[1,3,3,4,5,5,6,7]"
+			default_index: "2"
+		},
+		"KNOWLEDGE":{
+			values: "[4,5,5,5,6,7,8]"
+			default_index: "4"
+		}
+	]
+	},
+
+
+	]
+}

@@ -1,0 +1,160 @@
+{
+	"characters":[{
+	"name": "Darrin \"Flash\" Williams",
+	"Age": "20",
+	"Height": "5'11",
+	"Weight": "188 lbs",
+	"Hobbies": "Track, Music, Shakesparean \"Literature\"",
+	"Birthday": "June 6th",
+	"stats": {
+		"SPEED":{
+			"values": "[4,4,4,5,6,7,7,8]",
+			"default_index": "4"
+		},
+		"MIGHT":{
+			"values": "[2,3,3,4,5,6,6,7]",
+			"default_index": "2"
+		},
+		"SANITY":{
+			"values": "[1,2,3,4,5,5,5,7]",
+			"default_index": "2"
+		},
+		"KNOWLEDGE":{
+			"values": "[2,3,3,4,5,5,5,7]",
+			"default_index": "2"
+		}
+	}
+	},
+	{
+	"name": "Professor Longfellow",
+	"Age": "57",
+	"Height": "5'11",
+	"Weight": "153 lbs",
+	"Hobbies": "Gaelic Music, Drama, Fine Wines",
+	"Birthday": "July 27th",
+	"stats": {
+		"SPEED":{
+			"values": "[2,2,4,4,5,5,6,6]",
+			"default_index": "3"
+		},
+		"MIGHT":{
+			"values": "[1,2,3,4,5,5,6,6]",
+			"default_index": "2"
+		},
+		"SANITY":{
+			"values": "[1,3,3,4,5,5,6,7]",
+			"default_index": "2"
+		},
+		"KNOWLEDGE":{
+			"values": "[1,3,3,4,5,6,6,8]",
+			"default_index": "3"
+		}
+	}
+	},
+	{
+	"name": "Madame Zostra",
+	"Age": "37",
+	"Height": "5'0",
+	"Weight": "150 lbs",
+	"Hobbies": "Astrology, Cooking, Baseball",
+	"Birthday": "December 10th",
+	"stats": {
+		"SPEED":{
+			"values": "[2,3,3,5,5,6,6,7]",
+			"default_index": "2"
+		},
+		"MIGHT":{
+			"values": "[2,3,3,4,5,5,5,6]",
+			"default_index": "3"
+		},
+		"SANITY":{
+			"values": "[4,4,4,5,6,7,8,8]",
+			"default_index": "2"
+		},
+		"KNOWLEDGE":{
+			"values": "[1,3,4,4,4,5,6,6]",
+			"default_index": "3"
+		}
+	}
+	},
+	{
+	"name": "Zoe Ingstrom",
+	"Age": "8",
+	"Height": "3'9",
+	"Weight": "49 lbs",
+	"Hobbies": "Dolls, Music",
+	"Birthday": "November 5th",
+	"stats": {
+		"SPEED":{
+			"values": "[4,4,4,4,5,6,8,8]",
+			"default_index": "3"
+		},
+		"MIGHT":{
+			"values": "[2,2,3,3,4,4,6,7]",
+			"default_index": "3"
+		},
+		"SANITY":{
+			"values": "[3,4,5,5,6,6,7,8]",
+			"default_index": "2"
+		},
+		"KNOWLEDGE":{
+			"values": "[1,2,3,4,4,5,5,5]",
+			"default_index": "2"
+		}
+	}
+	},
+	{
+	"name": "Heather Granville",
+	"Age": "18",
+	"Height": "5'2",
+	"Weight": "120 lbs",
+	"Hobbies": "Television, Shopping",
+	"Birthday": "August 2nd",
+	"stats": {
+		"SPEED":{
+			"values": "[3,3,4,5,6,6,7,8]",
+			"default_index": "2"
+		},
+		"MIGHT":{
+			"values": "[3,3,3,4,5,6,7,8]",
+			"default_index": "2"
+		},
+		"SANITY":{
+			"values": "[3,3,3,4,5,6,6,6]",
+			"default_index": "2"
+		},
+		"KNOWLEDGE":{
+			"values": "[2,3,3,4,5,6,7,8]",
+			"default_index": "4"
+		}
+	}
+	},
+	{
+	"name": "Brandon Jaspers",
+	"Age": "12",
+	"Height": "5'1",
+	"Weight": "100 lbs",
+	"Hobbies": "Computers, Camping, Hockey",
+	"Birthday": "May 21st",
+	"stats": {
+		"SPEED":{
+			"values": "[3,4,4,4,5,6,7,8]",
+			"default_index": "2"
+		},
+		"MIGHT":{
+			"values": "[2,3,3,4,5,6,6,7]",
+			"default_index": "3"
+		},
+		"SANITY":{
+			"values": "[3,3,3,4,5,6,7,8]",
+			"default_index": "3"
+		},
+		"KNOWLEDGE":{
+			"values": "[1,3,3,5,5,6,6,7]",
+			"default_index": "2"
+		}
+	}
+	}
+
+	]
+}

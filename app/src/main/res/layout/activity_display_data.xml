@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="io.github.bote795.myapplication.DisplayData"
+    android:id="@+id/age"
+    android:longClickable="false">
+
+    <TextView android:text="Age:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:id="@+id/age_textView" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/flash"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Birth Day:"
+        android:id="@+id/bday_textView"
+        android:layout_below="@+id/age_textView"
+        android:layout_alignLeft="@+id/age_textView"
+        android:layout_alignStart="@+id/age_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hobbies:"
+        android:id="@+id/hobbies_textView"
+        android:layout_below="@+id/bday_textView"
+        android:layout_alignLeft="@+id/bday_textView"
+        android:layout_alignStart="@+id/bday_textView" />
+
+    <TextView
+        android:text="Height:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/height_textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Weight:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weight_textView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/height_textView"
+        android:layout_toEndOf="@+id/height_textView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Speed"
+        android:id="@+id/SpeedStatic_textView"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Might"
+        android:id="@+id/MightStatic_textView"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/SpeedStatic_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Knowledge"
+        android:id="@+id/KnowledgeStatic_textView"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/MightStatic_textView"
+        android:layout_alignLeft="@+id/MightStatic_textView"
+        android:layout_alignStart="@+id/MightStatic_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sanity"
+        android:id="@+id/SanityStatic_textView"
+        android:layout_marginTop="89dp"
+        android:layout_below="@+id/KnowledgeStatic_textView"
+        android:layout_alignRight="@+id/SpeedStatic_textView"
+        android:layout_alignEnd="@+id/SpeedStatic_textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/speedInc_button"
+        android:layout_below="@+id/SpeedStatic_textView"
+        android:layout_alignRight="@+id/bday_textView"
+        android:layout_alignEnd="@+id/bday_textView"
+        android:onClick="incSpeed" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/speedDec_button"
+        android:layout_alignTop="@+id/speedInc_button"
+        android:layout_toRightOf="@+id/height_textView"
+        android:layout_toEndOf="@+id/height_textView"
+        android:onClick="decSpeed" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/mightInc_button"
+        android:layout_below="@+id/MightStatic_textView"
+        android:layout_alignRight="@+id/bday_textView"
+        android:layout_alignEnd="@+id/bday_textView"
+        android:onClick="incMight"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/mightDec_button"
+        android:layout_below="@+id/MightStatic_textView"
+        android:layout_alignLeft="@+id/speedDec_button"
+        android:layout_alignStart="@+id/speedDec_button"
+        android:onClick="decMight"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/knowledgeInc_button"
+        android:layout_below="@+id/KnowledgeStatic_textView"
+        android:layout_alignLeft="@+id/mightInc_button"
+        android:layout_alignStart="@+id/mightInc_button"
+        android:onClick="incKnowledge" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/knowledgeDec_button"
+        android:layout_alignTop="@+id/knowledgeInc_button"
+        android:layout_toRightOf="@+id/height_textView"
+        android:layout_toEndOf="@+id/height_textView"
+        android:onClick="decKnowledge" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/speed_textView"
+        android:layout_alignBaseline="@+id/speedInc_button"
+        android:layout_alignBottom="@+id/speedInc_button"
+        android:layout_alignLeft="@+id/height_textView"
+        android:layout_alignStart="@+id/height_textView" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/sanityInc_button"
+        android:layout_below="@+id/SanityStatic_textView"
+        android:layout_alignRight="@+id/bday_textView"
+        android:layout_alignEnd="@+id/bday_textView"
+        android:onClick="incSanity" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/sanityDec_button"
+        android:layout_below="@+id/SanityStatic_textView"
+        android:layout_alignLeft="@+id/knowledgeDec_button"
+        android:layout_alignStart="@+id/knowledgeDec_button"
+        android:onClick="decSanity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/might_textView"
+        android:layout_alignBottom="@+id/mightInc_button"
+        android:layout_alignLeft="@+id/speed_textView"
+        android:layout_alignStart="@+id/speed_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/knowledge_textView"
+
+        android:layout_alignBaseline="@+id/knowledgeInc_button"
+        android:layout_alignBottom="@+id/knowledgeInc_button"
+        android:layout_alignLeft="@+id/might_textView"
+        android:layout_alignStart="@+id/might_textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/sanity_textView"
+        android:layout_alignBaseline="@+id/sanityInc_button"
+        android:layout_alignBottom="@+id/sanityInc_button"
+        android:layout_alignLeft="@+id/knowledge_textView"
+        android:layout_alignStart="@+id/knowledge_textView"
+        />
+</RelativeLayout>
