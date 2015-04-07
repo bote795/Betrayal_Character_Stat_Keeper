@@ -27,7 +27,7 @@ public class DisplayData extends ActionBarActivity {
         Integer position = UserData.getInt("index");
         currentUser= data.stats[position];
         setTitle(currentUser.NAME);
-
+        //getActionBar().setDisplayOptions(0);
         //setting up age
         TextView age_TextView= (TextView) findViewById(R.id.age_textView);
         age_TextView.setText("Age: "+currentUser.AGE);
@@ -70,6 +70,12 @@ public class DisplayData extends ActionBarActivity {
 
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem item= menu.findItem(R.id.action_settings);
+        item.setVisible(false);
+        return super.onPrepareOptionsMenu(menu);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

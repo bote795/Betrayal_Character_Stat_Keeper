@@ -18,7 +18,7 @@ public class ChooseCharacter  extends ActionBarActivity {
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_character);
-        String[] foods = Db.NAMES;//{"Darrin \"Flash\" Williams", "Professor Longfellow", "Madame Zostra", "Zoe Ingstrom", "Heather Granville" ,"Brandon Jaspers"};
+        String[] foods = Db.NAMES;
 
         ListAdapter characterAdapter = new customAdapter(this, foods);
 
@@ -39,7 +39,12 @@ public class ChooseCharacter  extends ActionBarActivity {
         );
     }
 
-
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem item= menu.findItem(R.id.action_settings);
+        item.setVisible(false);
+        return super.onPrepareOptionsMenu(menu);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
