@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 
 public class ChooseCharacter  extends ActionBarActivity {
@@ -32,7 +31,6 @@ public class ChooseCharacter  extends ActionBarActivity {
                     @Override
                     public void onItemClick(AdapterView<?> parent,View view, int position, long id){
                         String food = String.valueOf(parent.getItemAtPosition(position));
-                        Toast.makeText(ChooseCharacter.this,food, Toast.LENGTH_LONG).show();
                         Intent i = new Intent(getBaseContext(), DisplayData.class);
                         i.putExtra("index", position);
                         startActivity(i);

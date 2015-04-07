@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class DisplayData extends ActionBarActivity {
@@ -25,6 +26,7 @@ public class DisplayData extends ActionBarActivity {
         Db data = new Db();
         Integer position = UserData.getInt("index");
         currentUser= data.stats[position];
+        setTitle(currentUser.NAME);
 
         //setting up age
         TextView age_TextView= (TextView) findViewById(R.id.age_textView);
@@ -99,6 +101,7 @@ public class DisplayData extends ActionBarActivity {
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.speed_textView);
         speed_TextView.setText(currentUser.SPEED_VALUES[speed_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
 
     }
     public void decSpeed(View view){
@@ -110,6 +113,7 @@ public class DisplayData extends ActionBarActivity {
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.speed_textView);
         speed_TextView.setText(currentUser.SPEED_VALUES[speed_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
     }
     public void incMight(View view){
         might_index=increase(might_index);
@@ -120,6 +124,7 @@ public class DisplayData extends ActionBarActivity {
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.might_textView);
         speed_TextView.setText(currentUser.MIGHT_VALUES[might_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
 
     }
     public void decMight(View view){
@@ -128,12 +133,14 @@ public class DisplayData extends ActionBarActivity {
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.might_textView);
         speed_TextView.setText(currentUser.MIGHT_VALUES[might_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
     }
     public void incKnowledge(View view){
         knowledge_index =increase(knowledge_index);
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.knowledge_textView);
         speed_TextView.setText(currentUser.MIGHT_VALUES[knowledge_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
 
     }
     public void decKnowledge(View view){
@@ -141,12 +148,14 @@ public class DisplayData extends ActionBarActivity {
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.knowledge_textView);
         speed_TextView.setText(currentUser.MIGHT_VALUES[knowledge_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
     }
     public void incSanity(View view){
         sanity_index =increase(sanity_index);
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.sanity_textView);
         speed_TextView.setText(currentUser.SANITY_VALUES[sanity_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
 
     }
     public void decSanity(View view){
@@ -154,6 +163,7 @@ public class DisplayData extends ActionBarActivity {
         //setting up speed_textView
         TextView speed_TextView= (TextView) findViewById(R.id.sanity_textView);
         speed_TextView.setText(currentUser.SANITY_VALUES[sanity_index].toString() );
+        Toast.makeText(DisplayData.this,"Updated", Toast.LENGTH_SHORT).show();
     }
 
     private Integer increase(int index){
