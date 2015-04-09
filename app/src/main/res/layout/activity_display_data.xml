@@ -110,7 +110,8 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:id="@+id/speedDec_button"
-                    android:onClick="decSpeed" />
+                    android:onClick="decSpeed"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -130,6 +131,7 @@
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:id="@+id/speedInc_button"
+                    android:textColor="@color/black"
                     android:onClick="incSpeed" />
             </LinearLayout> <!-- close for speed row buttons and txt -->
 
@@ -174,7 +176,8 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:id="@+id/mightDec_button"
-                    android:onClick="decMight" />
+                    android:onClick="decMight"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -193,7 +196,8 @@
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:id="@+id/mightInc_button"
-                    android:onClick="incMight" />
+                    android:onClick="incMight"
+                    android:textColor="@color/black"/>
             </LinearLayout> <!-- close for speed row buttons and txt -->
 
 
@@ -237,7 +241,9 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:id="@+id/knowledgeDec_button"
-                    android:onClick="decKnowledge" />
+                    android:onClick="decKnowledge"
+                    android:textColor="@color/black"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -256,7 +262,8 @@
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:id="@+id/knowledgeInc_button"
-                    android:onClick="incKnowledge" />
+                    android:onClick="incKnowledge"
+                    android:textColor="@color/black" />
             </LinearLayout> <!-- close for knowledge row buttons and txt -->
 
 
@@ -300,7 +307,9 @@
                     android:layout_height="wrap_content"
                     android:text="-"
                     android:id="@+id/sanityeDec_button"
-                    android:onClick="decSanity" />
+                    android:onClick="decSanity"
+                    android:textColor="@color/black"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -319,7 +328,9 @@
                     android:layout_height="wrap_content"
                     android:text="+"
                     android:id="@+id/sanityInc_button"
-                    android:onClick="incSanity" />
+                    android:onClick="incSanity"
+                    android:textColor="@color/black"
+                    />
             </LinearLayout> <!-- close for Sanity row buttons and txt -->
 
 
